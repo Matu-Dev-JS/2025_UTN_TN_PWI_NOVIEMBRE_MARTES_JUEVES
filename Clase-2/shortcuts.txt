@@ -1,0 +1,8 @@
+Control + S = Guardar
+Control + C = Copiar
+Control + V = Pega
+Control + X = Corta
+Control + Y = Rehacer
+Control + Z = Deshacer
+Alt + Z = Text wrap (Ajuste de texto)
+Alt + Shift + A = Comentario

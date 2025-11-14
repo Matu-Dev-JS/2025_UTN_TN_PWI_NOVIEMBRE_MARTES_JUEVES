@@ -1,0 +1,56 @@
+TODO ESTO SE LOS VOY A COMPARTIR AL FINAL DE LA CLASE
+
+SINTAXIS
+HTML: Nos sirve para marcar la estructura de nuestra web
+CSS: Nos permite hacer los estilos de nuestra web
+JS: Nos permite hacer la funcionalidad en nuestra web
+
+Etiquetas:
+    El tipo de etiqueta esta definido por el elemento
+
+Autocierre
+    <img/> -> <= HTML 4 (Version antigua)
+    <img>  -> HTML 5 
+
+Cierre
+    Tienen la caracteristica de poder contener contenido (Como texto o otras etiquetas)
+    <div>hola</div>
+    <button>Click</button>
+    <a>Ir a inicio</a>
+    <b></b>
+
+
+
+ELEMENTOS:
+    Los elementos tienen un significado o funcionalidad
+
+    - img -> colocar imagenes
+    - button -> Crear botones
+    - a -> Hacer hipervinculos
+    - div -> dividir secciones, elementos, partes de la pagina
+    - b -> Bold (negrita) Permite hacer que el texto sea negrita
+
+Atributos: 
+    Son configuraciones sobre el elemento
+
+    El elemento IMG:    
+        - src (Source) que debe ser una direccion web valida donde esta la imagen que queres colocar
+        - width (ancho) Es cuanto ancho tendra nuestra img
+
+    El elemento A:
+        - href (Host reference) direccion web valida a la que nos redireccionara este hipervinculo
+
+Nesting (Anidamiento):
+    Es la caracteristica de las etiquetas de cierre de poder encerrar como contenido a otras etiquetas
+    Ejemplo: <div><img/></div>
+    <div><button>Comprar</button><a><b>Reclamar</b></a></div>
+
+Indentacion (Indent) (Buenas practicas):
+    Poder marcar con espacion la jerarquia/orden del codigo
+
+<div>
+        <button></button>
+        <a>
+            <b>Reclamar</b>
+        </a>
+</div>
