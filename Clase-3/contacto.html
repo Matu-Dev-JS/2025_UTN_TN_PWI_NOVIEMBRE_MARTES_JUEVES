@@ -7,5 +7,44 @@
 </head>
 <body>
     <h1>Pagina de contacto</h1>
+
+    <!-- FORM 
+        nombre
+        email
+        nro_telefono
+        mensaje 
+    -->
+    <form>
+        <!-- Nombre -->
+        <div>
+            <!-- descripcion de que debe ir en el campo -->
+            <!-- 
+            For se conecta al id del input relacionado
+            -->
+            <label for="nombre">Ingrese el nombre:</label>
+            <input type="text" id="nombre" required>
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label for="">Ingrese el email</label>
+            <input type="email">
+            
+        </div>
+
+        <!-- Color -->
+        <div>
+            <label for="">Ingrese su color favorito</label>
+            <input type="color">
+        </div>
+
+        <div>
+            <label for="">Ingrese el numero de telefono</label>
+            <input type="number">
+        </div>
+        <button type="submit">Enviar</button>
+
+    </form>
+
 </body>
 </html>
