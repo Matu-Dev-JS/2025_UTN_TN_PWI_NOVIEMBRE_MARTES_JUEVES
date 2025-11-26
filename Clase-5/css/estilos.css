@@ -1,0 +1,50 @@
+/* TODOS LOS H1 tendran este estilo */
+/* h1 {
+    color: red;
+    font-size: 130px;
+    background-color: black;
+} */
+
+/* Selector de clase */
+/* Todos los que tengan la clase titulo tendran este estilo */
+.titulo{
+    color: red;
+    font-size: 130px;
+    background-color: black;
+}
+
+.titulo-especial{
+    color: blueviolet
+}
+
+.ford-fiesta{
+    background-color: yellow;
+}
+
+.titulo-hostinger{
+    font-size: 36px;
+    color: black;
+}
+
+
+/* Defino la pildora base */
+.pildora{
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    color: black;
+}
+
+.pildora-violeta{
+    background-color: rgb(214, 179, 246);
+}
+
+.pildora-gris{
+    background-color: rgb(215, 212, 212);
+}
+.link{
+    color: black;
+    text-decoration: none;
+}
