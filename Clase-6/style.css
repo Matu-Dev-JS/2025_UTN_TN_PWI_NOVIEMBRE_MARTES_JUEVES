@@ -1,0 +1,41 @@
+/* 
+Especificidad: Que tan especifico somos a la hora de poner estilos
+Cascada: Dependiendo del orden de nuestro codigo una instruccion podria tener mas precedencia que otra
+*/
+
+/* Selector universal: APLICA ESTO A TODOS LOS ELEMENTOS */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /* No usar !important */
+    /* color: red !important; */
+}
+
+
+#titulo{
+    color: green;
+}
+
+
+/* Selector de clase */
+.titulo{
+    color: black ;
+    font-weight: 900;
+    font-size: 48px;
+    font-family: serif;
+}
+
+.titulo-gris{
+    color: rgb(88, 88, 88)
+}
+
+/* Selector de elementos */
+h1{
+    color: yellow;
+}
+
+
+
+
+/* 
+El selector de clase es mas especifico que el selector de elementos
+*/

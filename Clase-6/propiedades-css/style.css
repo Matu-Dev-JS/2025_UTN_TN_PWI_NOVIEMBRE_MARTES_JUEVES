@@ -1,0 +1,65 @@
+/* Cargamos un css externo */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Normalizacion simple */
+*{
+    /* TOdos mis textos tendran la fuente poppins */
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clase utilitaria */
+.title-ff{
+    font-family: "Playwrite NZ Guides", cursive;
+}
+
+.titulo{
+    font-family: "Playwrite NZ Guides", cursive;
+}
+
+
+/* Propiedades de texto */
+
+.parrafo{
+    font-size: 24px;/* Tamaño */
+    color: blue; /* Color */
+    text-align: start;
+    word-spacing: 16px;
+    letter-spacing: 8px;
+    /* 
+    Nos permite decorar
+    */
+    /* text-decoration: underline dotted red; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.negrita{
+    font-weight: 700;
+    text-decoration: underline;
+    
+}
+
+
+/* Box modeling */
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+   
+
+    /* border-radius: 50%; */
+   /*  border-radius: 10px; */
+   /* 
+    padding: 10px; A todos los lados
+    padding: 10px 20; vertical, horizontal
+    padding: 10px 20px 30px; top, horizontal, bottom
+    padding: 10px 20px 30px; top, right, bottom, left
+   */
+    padding: 10px 20px 40px 60px;
+    /* border: 10px solid rgb(255, 0, 0); */
+    border-right: 2px dotted red;
+    color: white;
+    margin-left: 200px; 
+}
