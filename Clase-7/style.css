@@ -1,0 +1,52 @@
+/* 
+Flexbox:
+    Un padre acomoda/ordena a sus hijos
+    Cuando el padre es una flexbox los hijos directos son flex-items
+    Cuando un elemento es flex se habilitan las propiedades flexibles:
+    Cuando un elemento es flexible tiene ciertas configuraciones por defecto:
+        flex-direction: row;
+*/
+
+/* Normalizacion */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.padre{
+    /* 
+    vh: viewport height (altura de la pantalla)
+    100vh = 100% del alto del viewport
+    1vh = 1% del alto del viewport
+    */
+    height: 100vh;
+    /* width: 100vw; */ /* 100% del ancho de la pantalla */
+    background-color: blueviolet;
+    display: flex;/* Hacemos que el padre sea una flexbox */
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hijo{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.hijo-1{
+    background-color: blue;
+}
+
+.hijo-2{
+    background-color: red;
+}
+
+.hijo-3{
+    background-color: green;
+}
+
+/* .padre-2{
+    background-color: aqua;
+} */

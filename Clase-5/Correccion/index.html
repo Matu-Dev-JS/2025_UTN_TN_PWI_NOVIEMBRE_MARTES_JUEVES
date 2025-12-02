@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercitacion-HTML-navegador-mdn</title>
+    <style>
+        .buscador-label{
+            /* Queremos que este oculto */
+            display: none;
+            /* visibility: hidden; */
+        }
+        .input {
+            padding-left: 16px;
+        }
+
+        code{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- El header es opcional -->
+    <header>
+        <div class="header-format">
+            <img class="logo-inicio" src="/img/MDN_Web_Docs_logo.svg.png" alt="logo inicio mdn">
+        </div>
+    </header>
+
+    <main>
+        <section class="main-format">
+            <h1>HTML: HyperText Markup Language</h1>
+        </section>
+    </main>
+    <aside>
+        <form class="aside-format">
+            <label for="buscador" class="buscador-label">
+                Escribe para buscar el blog
+            </label>
+            <input class="input" type="text" placeholder="Filter" id="buscador">
+            <img class="icono-filtro" src="/img/icono-filtro.png" alt="filtro" width="22px">
+        </form>
+        <nav>
+            <ol class="ul ul-1">
+                <li>
+                    <a class="sidebar-link-active">HTML</a>
+
+                    <ol class="ul ul-2">
+
+                        <!-- SECTION: Guides -->
+                        <li>
+                            <a>Guides</a>
+                            <ol class="ul ul-3">
+                                <li><a href="#">Content categories</a></li>
+                                <li><a href="#">Quirks and standards modes</a></li>
+                                <li><a href="#">Date and time formats</a></li>
+                                <li><a href="#">Comments</a></li>
+                                <li><a href="#">Constraint validation</a></li>
+                                <li><a href="#">Microdata</a></li>
+                                <li><a href="#">Microformats</a></li>
+                                <li><a href="#">Responsive images</a></li>
+                                <li><a href="#">Viewport meta element</a></li>
+                                <li><a href="#">Content categories</a></li>
+                            </ol>
+                        </li>
+
+                        <!-- SECTION: How to -->
+                        <li>
+                            <a>How to</a>
+                            <ol class="ul ul-3">
+                                <li><a href="#">How to use cross-origin images</a></li>
+                                <li><a href="#">Define terms with HTML</a></li>
+                                <li><a href="#">Use data attributes</a></li>
+                                <li><a href="#">Add a hitmap on top of an image</a></li>
+                                <li><a href="#">Author fast-loading HTML pages</a></li>
+                                <li><a href="#">Add JavaScript</a></li>
+                            </ol>
+                        </li>
+
+                        <!-- SECTION: Reference -->
+                        <li>
+                            <a>Reference</a>
+                            <ol class="ul ul-3">
+                                <li><a href="#">Elements</a></li>
+                                <li><a href="#">Attributes</a></li>
+                                <li><a href="#">Global attributes</a></li>
+                                <li><a href="#">Attributes by elements</a></li>
+                                <li><a href="#">Attribute value</a></li>
+                                <li>
+                                    <a href="">
+                                        <code>&lt;script&gt;</code>type
+                                    </a>
+                                </li>
+                            </ol>
+                        </li>
+
+                    </ol>
+                </li>
+            </ol>
+        </nav>
+    </aside>
+
+    <footer>
+        <div class="footer-format"></div>
+        <!-- Acá va algo -->
+    </footer>
+
+</body>
+
+</html>
