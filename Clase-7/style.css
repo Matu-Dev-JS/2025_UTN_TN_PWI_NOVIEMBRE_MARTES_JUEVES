@@ -5,6 +5,12 @@ Flexbox:
     Cuando un elemento es flex se habilitan las propiedades flexibles:
     Cuando un elemento es flexible tiene ciertas configuraciones por defecto:
         flex-direction: row;
+        justify-content: left | flex-start (hacen lo mismo)
+
+
+Justify-content:
+    space-evenly: Espaciar entre cada hijo y los bordes el mismo valor
+    space-between: Divide el espacio sobrante entre cada hijo (NO A LOS BORDES)
 */
 
 /* Normalizacion */
@@ -13,6 +19,25 @@ Flexbox:
     margin: 0;
     padding: 0;
 }
+
+header{
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 40px;
+    align-items: center;
+    height: 140px;
+}
+nav{
+    display: flex;
+    height: 70px;
+    align-items: center;
+
+    gap: 20px;
+
+}
+
 
 .padre{
     /* 
@@ -24,13 +49,15 @@ Flexbox:
     /* width: 100vw; */ /* 100% del ancho de la pantalla */
     background-color: blueviolet;
     display: flex;/* Hacemos que el padre sea una flexbox */
-    flex-direction: column;
+    flex-direction:row;
     gap: 20px;
+    /* Cuando flex-direction sea row justify-content ajusta el eje x (horizontal) */
+    justify-content: space-around;
 }
 
 .hijo{
-    width: 200px;
-    height: 300px;
+    width: 50px;
+    height: 100px;
     border-radius: 10px;
     background-color: black;
 }
@@ -49,4 +76,18 @@ Flexbox:
 
 /* .padre-2{
     background-color: aqua;
+} */
+
+.span{
+    width: 200px;
+}
+
+input{
+    width: 500px;
+    height: 500px;
+}
+
+
+/* .link{
+    width: 100px;
 } */
