@@ -49,10 +49,15 @@ nav{
     /* width: 100vw; */ /* 100% del ancho de la pantalla */
     background-color: blueviolet;
     display: flex;/* Hacemos que el padre sea una flexbox */
-    flex-direction:row;
+    flex-direction:column;
     gap: 20px;
     /* Cuando flex-direction sea row justify-content ajusta el eje x (horizontal) */
-    justify-content: space-around;
+    justify-content: center;
+    align-items: start;
+}
+
+.primera-seccion{
+    height: calc(100vh - 140px);
 }
 
 .hijo{
@@ -91,3 +96,13 @@ input{
 /* .link{
     width: 100px;
 } */
+/*
+SI FLEX DIRECTION ES ROW:
+    - Justify content: Ajusta en eje x
+    - Align items: Ajusta en eje y
+
+SI FLEX DIRECTION ES COLUMN:
+    - Justify content: Ajusta en eje y
+    - Align items: Ajusta en eje x
+
+ */
