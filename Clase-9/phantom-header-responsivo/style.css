@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+:root{
+    /* Acordate del color primario */
+    --color-primario-700: #3d325c;
+    --color-primario-300: #aca0f2;
+    --color-primario-200: #e1defc;
+    --color-primario-100: #f4f1fe;
+    --color-primario-50: #fbfafc;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    /* Utilizo la variable de color primario */
+    color: var(--color-primario-700);
+}
+
+body{
+    background-color: var(--color-primario-100);
+}
+
+/* Resetear los estilos de listas (los puntitos que se ven en cada item) */
+ul, ol{
+    list-style: none;
+}
+
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+}
+
+.btn-primary{
+    padding:  16px 32px;
+    border-radius: 100px;
+    background-color: var(--color-primario-300);
+    font-weight: 600;
+}
+
+.btn-primary:hover{
+    background-color: var(--color-primario-200);
+}
+
+.btn-secondary{
+    border: none;
+    background-color: var(--color-primario-50);
+    padding: 16px;
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
+    font-size: 18px;
+}
+.btn-secondary:hover{
+    background-color: var(--color-primario-200);
+}
+
+.header{
+    background-color: var(--color-primario-100);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 94px;
+    padding: 0px 32px;
+}
+
+.header__logo-container{
+    width: 150px;
+    height: 30px;
+}
+
+.header .header__nav-list{
+    display: flex;
+    background-color: var(--color-primario-50);
+    height: 62px;
+    border-radius: 100px;
+    padding: 8px;
+}
+
+.header__nav-item{
+    padding: 12px 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/* Cuando estes encima del item */
+.header__nav-item:hover{
+    background-color: var(--color-primario-200);
+    border-radius: 92px;
+    cursor: pointer;
+}
+
+
+
+.header__actions{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-menu{
+    display: none;
+}
+
+.header__logo-mobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 1280px) {
+    header nav{
+        display: none;
+    }
+    .btn-search{
+        display: none;
+    }
+    .btn-menu{
+        display: flex;
+    }
+}
+
+@media (width < 770px) {
+    .header__logo{
+        display: none;
+    }
+    .header__logo-mobile{
+        display: flex;
+        height: 36px;
+    }
+
+    .header__logo-container{
+        width: 50px;
+    }
+
+    .btn-primary{
+        font-size: 14px;
+        padding: 16px 24px;
+    }
+    .header{
+        padding: 0px 20px;
+    }
+}
+
+/* Cuando el tamaño de la pantalla sea menor a 1200px */
+/* 
+@media (width < 1200px){
+    body{
+        background-color: red;
+    }
+} */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .padre{
+            height: 100vh;
+            background-color: red;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .hijo{
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        .hijo-1{
+            flex: 1;
+        }
+
+        .hijo-2{
+            flex: 1;
+        }
+
+        .hijo-3{
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="padre">
+        <div class="hijo hijo-1">1</div>
+        <div class="hijo hijo-2">2</div>
+        <div class="hijo hijo-3">3</div>
+    </div>
+</body>
+</html>
