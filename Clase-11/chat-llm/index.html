@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        *{
+            color: white;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .chat{
+            margin: 50px;
+            border-radius: 16px;
+            background-color: rgb(70, 70, 70);
+           /*  overflow: hidden; */
+        }
+
+        .chat__header-wrapper{
+            background-color: rgb(0, 0, 0);
+            position: sticky;
+            top: 0px;
+        }
+
+        .chat__header{
+            background-color: rgb(45, 45, 45);
+            height: 50px;
+            padding: 10px;
+            font-family: sans-serif;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+        }
+        .chat__content{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 11px;
+            background-color: rgb(18, 18, 37);
+            height: 200vh;
+        }
+
+        .copy-btn{
+            background-color: rgb(91, 90, 90);
+            padding: 2px 10px;
+            border-radius: 2px;
+            border: none;
+            width: 100px;
+            transition: linear 300ms;
+        }
+
+        .copy-btn:hover{
+            transition: linear 300ms;
+            background-color: rgb(179, 178, 178);
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat">
+        <div class="chat__header-wrapper">
+            <div class="chat__header">
+                <button class="copy-btn">Copiar</button>
+            </div>
+        </div>
+        <div class="chat__content">
+
+        </div>
+    </div>
+
+    <div class="chat">
+        <div class="chat__header-wrapper">
+            <div class="chat__header">
+                Acciones
+            </div>
+        </div>
+        <div class="chat__content">
+
+        </div>
+    </div>
+</body>
+</html>
