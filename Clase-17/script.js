@@ -185,13 +185,102 @@ const usuarios_2 = [
         name: 'pedro',
         edad: 60,
         id: 7
+    },
+    {
+        name: 'pedro',
+        edad: 60,
+        id: 8
+    },
+    {
+        name: 'pedro',
+        edad: 60,
+        id: 9
+    }
+]
+
+
+/* 1)
+crear una funcion llamada buscarPorNombre que recibira un nombre y buscara a los usuarios que coincidan con ese nombre y los retornara, en caso de no coincidir devolver array vacio. */
+
+/* function buscarPorNombre(array_personas, nombre) {
+    const personas_con_nombre = []
+    for (const persona of array_personas) {
+        if (persona.name === nombre) {
+            personas_con_nombre.push(persona);
+
+        }
+    }
+    return personas_con_nombre;
+}
+console.log(buscarPorNombre(usuarios_2, 'pedro'))
+ */
+
+/* 2) 
+crear una funcion llamada buscarPorRangoEdad que recibira 2 numeros (max y min) y buscara a todos los usuarios que tengan una edad dentro del rango. En caso de no coincidir devolver array vacio. */
+
+/* 
+function buscarPorRangoEdad(min, max){
+    const coincidencias = []
+    for(const usuario of usuarios_2){
+        if(usuario.edad >= min && usuario.edad <= max){
+            coincidencias.push(usuario)
+        }
+    }
+    return coincidencias
+}
+ */
+
+const productos = [
+    {
+        precio: 40,
+        id: 1,
+        titulo: 'TV Samsung 43',
+        stock: 50
+    },
+    {
+        precio: 140,
+        id: 2,
+        titulo: 'TV Samsung 53',
+        stock: 5
+    },
+    {
+        precio: 190,
+        id: 3,
+        titulo: 'TV Samsung 63',
+        stock: 89
+    },
+]
+
+/* 
+3)
+Crear una funcion llamada calcularCostoTotal que recorrera la lista de productos y sumara el precio * stock de cada uno de los productos
+
+*/
+
+const carrito = [
+    {
+        id: 3,
+        titulo: 'TV Samsung 43',
+        precio: 40,
+        cantidad: 3
+    },
+    {
+        id: 8,
+        titulo: 'TV Samsung 53',
+        precio: 400,
+        cantidad: 1
+    },
+    {
+        id: 6,
+        titulo: 'TV Samsung 63',
+        precio: 400,
+        cantidad: 10
     }
 ]
 
 /* 
-1)
-crear una funcion llamada buscarPorNombre que recibira un nombre y buscara a los usuarios que coincidan con ese nombre y los retornara, en caso de no coincidir devolver array vacio.
-
-2) 
-crear una funcion llamada buscarPorRangoEdad que recibira 2 numeros (max y min) y buscara a todos los usuarios que tengan una edad dentro del rango. En caso de no coincidir devolver array vacio.
+4)
+agregarAlCarrito(titulo, precio, cantidad, id) Agrega un item al carrito
+calcularTotalCarrito() Retorna el costo total del carrito
+eliminarItemCarrito(id) Busca por id y disminuye la cantidad, pero si es 1 debe eliminar el objeto del array
 */
