@@ -283,4 +283,6 @@ const carrito = [
 agregarAlCarrito(titulo, precio, cantidad, id) Agrega un item al carrito
 calcularTotalCarrito() Retorna el costo total del carrito
 eliminarItemCarrito(id) Busca por id y disminuye la cantidad, pero si es 1 debe eliminar el objeto del array
+
+
 */
