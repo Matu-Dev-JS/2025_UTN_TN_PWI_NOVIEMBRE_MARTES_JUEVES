@@ -197,7 +197,15 @@ console.log(`
     <h3></h3>
     <button></button>
 `) */
-/* function validarNumero (dato){
+/* 
+isNaN te dice true si el dato pasado a numero da NaN 
+NaN == NaN
+*/
+/* function isNaNByHash (dato){
+    return String( Number(dato) ) === 'NaN'
+}
+
+function validarNumero (dato){
     return dato && !isNaN(dato)
 }
 
