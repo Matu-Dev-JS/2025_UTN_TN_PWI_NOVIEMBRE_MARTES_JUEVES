@@ -40,3 +40,45 @@ titulo.innerText = `Bienvenido ${sesion.username}`;
 
 const notificaciones = document.getElementById('notificaciones');
 notificaciones.innerText = `Tienes ${sesion.pendingNotifications} notificaciones revisa tu casilla electronica ${sesion.email}`;
+
+
+const contenedor = document.getElementById('contenedor')
+
+function renderOferta (oferta){
+    if (oferta && oferta > 0 ){
+        return `<span>%${oferta} descuento</span>` 
+    }
+    else{
+        return ''
+    }
+}
+
+let oferta = 10
+contenedor.innerHTML = `
+    <hr/>
+    <h2>Tv samsung</h2>
+    ${
+        oferta && oferta > 0 
+        ? 
+        `<span>%${oferta} descuento</span>` 
+        : 
+        ''
+    }
+    ${renderOferta(oferta)}
+    <span>Precio: $${ 400 - (400 * oferta / 100)} usd</span>
+    <br>
+    <button>Comprar</button>
+`
+
+
+/* 
+Ternarios
+El ternario nos permite hacer condiciones
+
+let condicion = true
+
+condicion 
+? console.log('La condicion se cumplio')
+: console.log('La condicion no se cumplio')
+*/
+
