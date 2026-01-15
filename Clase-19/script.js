@@ -1,67 +1,40 @@
-const btnSaludar = document.getElementById("btn-saludar");
+const login_form_HTML = document.getElementById('login-form')
+const login_form_2_HTML = document.getElementById('login-form-2')
+    
+//el parametro evento nos lo provee la web al dispararse el evento
+//Este parametro es un objeto con metadatos del evento
+function login (evento){
+    //Es un metodo asociado al objeto evento que permite evitar que el evento tenga comportamientos por defecto
+    evento.preventDefault()
+    //El evento submit por defecto recarga la pagina
+    //mostrar por consola los valores capturados del formulario
 
+    //Evento.target nos va a dar una referencia de que elemento se disparo este evento
+    //Dicho en criollo 'de que formulario se activo el submit'
 
-//Nos permite asociar a un evento del DOM una funcionalidad
-/* 
-addEventListener recibe 2 parametros
-1: Event key (un string que representa el tipo de evento)
-2: funcionalidad (una funcion que ejecutara cuando el evento suceda)
-*/
+    const form = evento.target
 
-function saludar(){
-    console.log("Hola mundo")
-}
-
-btnSaludar.addEventListener(
-    'click',
-    saludar
-)
-
-btnSaludar.addEventListener(
-    'click',
-    function (){
-
+    const form_data = {
+        email: form.email.value,
+        password: form.password.value
     }
+    console.log('Datos del login:', form_data)
+}
+
+login_form_HTML.addEventListener(
+    'submit',
+    login
+)
+login_form_2_HTML.addEventListener(
+    'submit',
+    login
 )
 
-/* 
-Contador
-Deberas tener 2 botones uno para decrementar y otro para incrementar
-En el medio de esos 2 botones mostraras un numero (inicalmente 0)
-TIP:
-- Crear una variable que guarde el estado del contador (No tratar de obtener el valor por medio del DOM)
-- Crear una funcion de renderContador que imprima el valor actual de la variable contador en pantalla
-*/
+const noCopiar = document.getElementById('no-copiar')
 
-let contador = 0
-
-const contador_HTML = document.getElementById('contador')
-const incrementar_btn_HTML = document.getElementById('incrementar')
-const decrementar_btn_HTML = document.getElementById('decrementar')
-
-function renderContador (){
-    contador_HTML.innerText = contador
-}
-function setContador(valor){
-    contador = valor
-    renderContador()
-}
-
-
-function incrementar (){
-    setContador(contador + 1)
-}
-
-function decrementar (){
-    setContador(contador - 1)
-}
-
-incrementar_btn_HTML.addEventListener(
-    'click',
-    incrementar
-)
-
-decrementar_btn_HTML.addEventListener(
-    'click',
-    decrementar
+noCopiar.addEventListener(
+    'copy',
+    function( evento ){
+        evento.preventDefault()
+    }
 )
