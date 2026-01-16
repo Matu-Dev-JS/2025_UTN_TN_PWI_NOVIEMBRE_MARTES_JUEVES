@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>TO DO LIST</h1>
+    </header>
+    <main class="contenedor-principal">
+        
+        <section class="caja-formulario">
+            <h2>Nueva Tarea</h2>
+            <form id="form-tareas">
+                <div class="input-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" name="titulo" placeholder="Ej: Llorar por el JS" required>
+                </div>
+                <div class="input-group">
+                    <label for="descripcion">Descripción</label>
+                    <input type="text" id="descripcion" name="descripcion" placeholder="Ej: Llorar por la logica de JS" required>
+                </div>
+                <button type="submit">Agregar Tarea</button>
+            </form>
+        </section>
+        <section class="caja-lista">
+            <h2>Mis Tareas</h2>
+            <div id="contenedor-lista">
+                <p>No hay tareas aún...</p>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

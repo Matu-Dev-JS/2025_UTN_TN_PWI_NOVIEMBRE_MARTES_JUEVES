@@ -18,6 +18,8 @@ function login (evento){
         email: form.email.value,
         password: form.password.value
     }
+
+
     console.log('Datos del login:', form_data)
 }
 
@@ -37,4 +39,16 @@ noCopiar.addEventListener(
     function( evento ){
         evento.preventDefault()
     }
+)
+
+let tareas = [{title: 'pepe'}]
+
+function setTareasState (nuevas_tareas){
+    tareas = nuevas_tareas
+    renderTareas()
+}
+
+//Agregar una tar
+setTareasState(
+    [...tareas, nueva_tarea]
 )
