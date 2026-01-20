@@ -77,3 +77,12 @@ async function cargarTareas (){
 
 renderTareas()
 cargarTareas()
+
+/* 
+Consumir una API
+
+Consumir https://swapi.info/api/vehicles que traera la lista de vehiculos
+Imprimir en pantalla un listado de nombres de los vehiculos, modelo y precio (Pueden mostrar mas cosas si quieren)
+Imprimir en pantalla el cargando mientras se esten obteniendo los datos del servidor
+
+*/
