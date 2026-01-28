@@ -25,11 +25,11 @@ El primer parametro de un componente y unico es PROPS, no importa si lo llamas c
     </div>
   )
 } */
-
+import './ProductCard.css'
 function ProductCard({ title, price }) {
 
     return (
-        <div>
+        <div className="product-card">
             <h2>{title}</h2>
             <img src='/images/auto-rojo-2.jpg' />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dicta aliquid! Iste esse voluptatem, excepturi sed non fugiat. Explicabo dignissimos fuga accusantium? Ad expedita, facere quisquam hic sit ea in!</p>
@@ -41,3 +41,10 @@ function ProductCard({ title, price }) {
 
 
 export {ProductCard}
+
+/* 
+Un modulo puede exportar multiples cosas 
+Un modulo SOLO PUEDE EXPORTAR UNA COSA POR DEFECTO
+*/
+
+/* export default ProductCard */

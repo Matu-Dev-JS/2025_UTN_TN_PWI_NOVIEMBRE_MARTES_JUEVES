@@ -13,6 +13,9 @@ function App() {
   
   return (
     <div className='contenedor'>
+      <div className='product-card'>
+        Hola
+      </div>
       {
         isAdmin
         ? <span>Role: Admin</span>
