@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Counter from './Components/Counter/Counter'
+
 
 /* 
 ESTADOS
@@ -32,19 +34,32 @@ function App() {
   La funcion de actualizacion tiene una propiedad magica MUY IMPORTANTE, tiene la capacidad de re-renderizar mi componente
   para modificar el valor de un estado debemos hacerlo mediante la funcion de actualizacion pasando por parametro el NUEVO VALOR DEL ESTADO
   */
-  const state = useState(false) // [false, function (){}]
+  /* const state = useState(false) // [false, function (){}]
   const estaPrendida = state[0] //accedo al primer valor del state
-  const actualizarEstaPrendida = state[1] //accedo a la funcion de actualizacion
+  const actualizarEstaPrendida = state[1] //accedo a la funcion de actualizacion */
 
-  
+  //Esta es la forma moderna de crear un estado en react
+  const [estaPrendida, actualizarEstaPrendida] = useState(false)
+
 
   function alternarLuz (){
     console.log('El usuario intento alternar la luz')
-    actualizarEstaPrendida(!estaPrendida)
+    actualizarEstaPrendida(
+      (currentEstaPrendida) => {
+        return !currentEstaPrendida
+      }
+    )
     console.log(estaPrendida)
   }
 
   console.log('El componente APP se renderizo')
+
+  /* 
+  Crear un componente llamado Counter.
+  Este componente tendra la posibilidad de incrementar y decrementar.
+  Debera mostrar el valor del contador en la pantalla.
+  
+  */
   return (
     <div>
       <div>
@@ -57,6 +72,8 @@ function App() {
       </div>
       <button onClick={alternarLuz}>Cambiar la luz</button>
       <DummyComponent/>
+
+      <Counter/>
     </div>
   )
 }
@@ -69,3 +86,5 @@ function DummyComponent (){
 }
 
 export default App
+
+
