@@ -81,9 +81,10 @@ function App() {
 		</div>
 	  ] */
 
-
+	let color_principal = '#ff0000'
 	return (
 		<div>
+			<h1 style={{backgroundColor: color_principal}}>Hola mundo</h1>
 			{/* 
       FORMA DEFINITIVA
       */}
@@ -101,21 +102,22 @@ function App() {
 					}
 				)
 			}
-
-			<ProductList productos={productos_servidor} />
+			<div>
+				<ProductList productos={productos_servidor} />
+			</div>
 		</div>
 	)
 }
 
 function ProductList ({productos}) {
 	return (
-		<div>
+		<>
 			{
 				productos.map(
 					(producto) => <ProductCard producto={producto} key={producto.id}/>
 				)
 			}
-		</div>
+		</>
 	)
 }
 
