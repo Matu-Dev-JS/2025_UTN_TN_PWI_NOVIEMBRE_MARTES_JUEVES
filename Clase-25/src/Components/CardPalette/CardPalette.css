@@ -1,0 +1,11 @@
+.card-palette{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 245px;
+}
+
+.card-palette__info{
+    display: flex;
+    justify-content: space-between;
+}

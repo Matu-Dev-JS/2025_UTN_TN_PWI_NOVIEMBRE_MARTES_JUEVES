@@ -50,3 +50,22 @@ Componentes:
         props: colors
     - CardPalleteColor: Un color en puntual
         props: color
+
+<div class='colors'>
+    <div class='color'></div>
+    <div class='color'></div>
+    <div class='color'></div>
+    <div class='color'></div>
+</div>
+<div class='colors'>
+    <div class='color'></div>
+    <div class='color'></div>
+    <div class='color'></div>
+    <div class='color'></div>
+</div>
+<div class='colors'>
+    <div class='color'></div>
+    <div class='color'></div>
+    <div class='color'></div>
+    <div class='color'></div>
+</div>

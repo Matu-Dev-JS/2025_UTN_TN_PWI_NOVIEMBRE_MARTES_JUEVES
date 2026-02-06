@@ -1,0 +1,34 @@
+
+
+.card-palette__color-value{
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+    border-top-right-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+}
+
+
+.card-palette__color:hover .card-palette__color-value{
+    display: block;
+}
+
+.card-palette__color{
+    position: relative;
+}
+
+.card-palette__colors .card-palette__color:nth-child(1){
+    flex: 3;
+}
+.card-palette__colors .card-palette__color:nth-child(2){
+    flex: 2;
+}
+.card-palette__colors .card-palette__color:nth-child(3){
+    flex: 1.5;
+}
+.card-palette__colors .card-palette__color:nth-child(4){
+    flex: 1;
+}

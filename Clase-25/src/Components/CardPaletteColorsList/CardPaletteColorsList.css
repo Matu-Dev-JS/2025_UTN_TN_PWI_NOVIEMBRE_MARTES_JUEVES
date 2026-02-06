@@ -1,0 +1,7 @@
+.card-palette__colors{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
