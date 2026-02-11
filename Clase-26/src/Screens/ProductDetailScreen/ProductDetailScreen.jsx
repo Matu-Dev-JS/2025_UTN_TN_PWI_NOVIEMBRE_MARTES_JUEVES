@@ -17,7 +17,9 @@ export default function ProductDetailScreen() {
         }
     )
 
-    
+    if(!product_selected){
+        return <h1>Producto no encontrado</h1>
+    }
   return (
     <div>
         <h1>
